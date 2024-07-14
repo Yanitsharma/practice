@@ -17,7 +17,7 @@ const Login=()=>{
       password:password,
     }
     try{
-    const response= await axios.post("http://localhost:2000/api/login", data)
+    const response= await axios.post("https://social-media-app-4-bm12.onrender.com/api/login", data)
     console.log(response);
         console.log(response.status);
         navigate("/app");
@@ -35,8 +35,8 @@ const Login=()=>{
       <div> <input type="text" className="ip" ref={userName} placeholder=' username'></input></div>
       <div><input type="password" className="ip" ref={passwordId} placeholder='password'></input></div>
       <div className="but">
-     <span> <button type="button" className="btn btn-primary bt" onClick={handleOnSubmit}>Login</button></span>
-     <span><button type="button" className="btn btn-success bat"onClick={handlOnClick} >SignUp</button></span>
+     <span> <button type="button" className="btn btn-primary bb" onClick={handleOnSubmit}>Login</button></span>
+     <span><button type="button" className="btn btn-success b"onClick={handlOnClick} >SignUp</button></span>
       </div>
       </div>
      
